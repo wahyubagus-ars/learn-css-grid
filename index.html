@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,84 @@
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
+
 <body>
+
   <div class="container">
-    
+
+    <header class="header">
+      <div class="hero">
+        <h2 class="heading">yooo Shop</h2>
+        <p class="sub-heading">Hoodie & T-shirt</p>
+      </div>
+      <div class="features feature-1">
+        <h4 class="price">IDR 250K</h4>
+        <p class="item">Hoodie</p>
+      </div>
+      <div class="features feature-2">
+        <h4 class="price">IDR 150K</h4>
+        <p class="item">T-shirt</p>
+      </div>
+    </header>
+
+
+    <nav class="menu">
+      <div class="menu-toggle">
+        <input type="checkbox" style="background-color: black;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="brand">
+        <h1>yooo Merch</h1>
+      </div>
+      <ul class="menu-list">
+        <li><a href="">Home</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <section class="services">
+      <div class="service">
+        <div class="icon"></div>
+        <h3>Tutorial</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+
+      <div class="service">
+        <div class="icon"></div>
+        <h3>Online Course</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+
+      <div class="service">
+        <div class="icon"></div>
+        <h3>Merch</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+
+      <div class="service">
+        <div class="icon"></div>
+        <h3>Podcast</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+    </section>
+
   </div>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle')
+  const nav = document.querySelector('nav ul')
+
+  menuToggle.addEventListener('click', function(){
+    nav.classList.toggle('slide')
+  })
+</script>
 </body>
+
 </html>
